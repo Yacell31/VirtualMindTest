@@ -1,0 +1,5 @@
+1-What do you think about using the user ID as the input endpoint?
+It's a security gap, a better way it's to use a numeric code related to the user than can be accesible and a specific way to identify a certain user without exposing a database security key as the UserId .
+
+2-How would you improve the transaction to ensure that the user who makes the purchase is the correct user?
+I will validate first the existence of the user within our data before trying to make any longer operation with the user input. If the user exists then the flow keep running to the next steps.
